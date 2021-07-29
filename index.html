@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="fontawesome/webfonts">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Navigation Bar</title>
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			<a href="">
+				<img src="logo/logo.png" alt="logo" style="width: 150px;height: 70px;">
+			</a>
+		</div>
+		<div class="openMenu"><i class="fa fa-bars"></i></div>
+		<ul class="menu">
+			<li class="active"><a href="#">Domov</a></li>
+			<li><a href="#">Storitve</a></li>
+			<li><a href="#">Reference</a></li>
+			<li><a href="#">Kontakt</a></li>
+			<div class="closeMenu"><i class="fa fa-times"></i></div>
+			<span class="socialIcons">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-tiktok"></i>
+				<i class="fab fa-github"></i>
+			</span>
+		</ul>
+	</nav>
+
+	<script>
+		$(document).on("click", "ul li", function () {
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+	</script>
+
+
+	<header>
+		<img src="images/beach.jpg" alt="lake" class="header-image" />
+	</header>
+	<main>
+		<section id="splash" class="grid">
+			<div id="splash-content">
+				<h2>Lorem Ipsum Dolor</h2>
+				<div>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industry's
+						standard dummy text ever since the 1500s.when an unknown printer took a galley of type and
+						scrambled it to make a
+						type specimen book. It has survived not only five centuries, but also the leap into electronic
+						typesetting, remaining essentially
+						unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+						Ipsum passages, and more recently with desktop
+						publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="buckets" class="grid">
+			<ul>
+				<li>
+					<img src="images/sea.jpg" alt="Beach" />
+					<div class="bucket">
+						<h3>Prvi naslov</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/sea.jpg" alt="Beach" />
+					<div class="bucket">
+						<h3>Drugi naslov</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/sea.jpg" alt="Beach" />
+					<div class="bucket">
+						<h3>Tretji naslov</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s.</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section class="grid">
+			<div class="twin">
+				<h2>Tretji podnaslov</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error amet fuga corrupti tempora optio,
+					omnis expedita est. Molestias id ullam sequi deserunt alias atque ipsa suscipit vitae asperiores quo
+					quibusdam perferendis illo illum porro delectus, corporis autem nesciunt quia molestiae earum
+					distinctio vel, veniam voluptates debitis! Harum maxime sunt eius doloribus, quibusdam voluptatem
+					nesciunt veniam consectetur ea quam quia explicabo. Laboriosam temporibus modi inventore. Iusto
+					recusandae ea eum repellat pariatur.
+				</p>
+			</div>
+
+			<div class="twin">
+				<h2>Četrti podnaslov</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora similique placeat obcaecati amet
+					consectetur. Quibusdam, harum. Quasi, rem quam perferendis vero aut esse fugiat est non saepe
+					exercitationem veniam. Facere eum expedita, provident vero cumque et earum, animi veritatis
+					reprehenderit accusamus iste fuga cupiditate quia dolorem eos inventore quis adipisci enim corrupti
+					soluta quam ipsam itaque! Sapiente, consequuntur fugit. Iste reiciendis eaque aut impedit nihil
+					ratione nemo laudantium minus eius.</p>
+			</div>
+
+			<div class="twin">
+				<h2>Peti podnaslov</h2>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque labore atque earum magni iusto quasi,
+					itaque ab laboriosam perspiciatis, obcaecati numquam rem vitae explicabo aliquam mollitia tempore.
+					Velit, suscipit cum? Quasi illum commodi minus veniam et accusantium perspiciatis, voluptatem atque?
+					A dolore iusto autem, velit soluta consectetur expedita id ratione, temporibus qui error ad
+					aspernatur quidem necessitatibus et, quae sapiente nostrum voluptates corrupti. Voluptatum nihil
+					possimus nesciunt temporibus exercitationem assumenda.</p>
+			</div>
+		</section>
+	</main>
+	<footer id="footer" class="grid">
+		<aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque.</aside>
+		<aside>Copyright</aside>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

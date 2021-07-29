@@ -1,0 +1,271 @@
+*{
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	scrollbar-color: #3e454c #fff;
+}
+
+body{
+	color: #404040;
+	font-family: 'Helvetica', Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+p{
+	font-size: calc(14px + 0.1vw);
+}
+
+::selection{
+	background: #00cca3;
+	color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: #e6fffa;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li a{
+    padding: 15px;
+    text-decoration: none;
+    color:#000;
+    font-size: 18px;
+}
+
+.menu li.active a{
+    color: #00cca3;
+    transition: all 0.3s ease;
+}
+
+.openMenu{
+    font-size: 32px;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu .closeMenu, .socialIcons i{
+    font-size: 32px;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-instagram:hover{
+    color: #00cca3;
+}
+
+.fa-facebook:hover{
+    color: #00cca3;
+}
+
+.fa-twitter:hover{
+    color: #00cca3;
+}
+
+.fa-tiktok:hover{
+    color: #00cca3;
+}
+
+.fa-github:hover{
+    color: #00cca3;
+}
+
+#buckets ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+#bucket li{
+    width: 30%;
+}
+
+img{
+	width: 100%;
+	display: grid;
+	height: auto;
+
+}
+
+header img{
+	width: 100%;
+	height: calc(100vh - 80px);
+    object-fit: cover;
+}
+
+h1, h2, h3{
+	text-align: center;
+	margin: 0;
+	padding: 16px 0;
+}
+
+p{
+	margin: 0;
+	padding: 16px 0;
+}
+
+#logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 0 0;
+}
+
+#splash{
+	background: #ffedcc;
+	padding-bottom: 50px;
+}
+
+#splash-content{
+	padding: 24px;
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+}
+
+.bucket{
+	padding: 10px;
+}
+
+#buckets{
+    width: 85%;
+    margin: auto;
+    margin-top: -40px;
+	padding: 3px 3px 3px;
+	background: #3e454c;
+}
+
+#buckets ul{
+	padding: 0;
+	margin: 0;
+}
+
+#buckets li{
+	list-style-type: none;
+	background: #fff;
+	margin-bottom: 0;
+}
+
+#buckets img{
+	padding: 3px;
+}
+
+.grid p{
+	text-align:center;
+}
+
+.grid .twin p{
+    width: 80%;
+    margin: auto;
+}
+
+.twin{
+	padding: 32px;
+	color: #000;
+}
+
+.twin:nth-child(1){
+    background-color: #fff;
+}
+
+.twin:nth-child(2){
+    background: rgba(255, 246, 229, 0.4);
+}
+
+.twin:nth-child(3){
+	background: #ffedcc;
+}
+
+#footer{
+	padding: 32px;
+	background: #000;
+	color: white;
+	text-align: center;
+}
+
+@media(max-width:768px){
+    .menu{
+        height: 105%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: top 0.5s ease;
+        display: none;
+        line-height: 2.5;
+        background-color: #ccfff5;
+    }
+
+	.header-image{
+		height: 40vh;
+	}
+
+    .menu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+    }
+
+    .menu li a{
+        padding: 15px;
+        text-decoration: none;
+        color:#000;
+        font-size: 20px;
+    }
+
+    .openMenu{
+        display: block;
+    }
+
+    .socialIcons i{
+        display: inline-block;
+        padding: 12px;
+    }
+
+    #buckets{
+        width: 95%;
+    }
+
+    #buckets img{
+        height: 180px;
+    }
+
+    #splash-content{
+        width: 95%;
+    }
+
+    #splash p{
+        text-align: left;
+    }
+
+    .grid .twin p{
+        width: 95%;
+        text-align:left;
+    }
+}
