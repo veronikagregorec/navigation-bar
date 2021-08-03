@@ -1,6 +1,6 @@
 # Navigation Bar
 
-Created with JavaScript, website template with HTML and CSS
+Created with JavaScript, website template with HTML and CSS. I made a desktop and a tablet version.
 
 Demo: <a href="https://gregorec.github.io/navigation-bar/">Navigation bar</a>
 
