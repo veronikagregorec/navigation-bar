@@ -2,7 +2,7 @@
 
 Created with JavaScript, website template with HTML and CSS. I made a desktop and a tablet version.
 
-Demo: <a href="https://gregorec.github.io/navigation-bar/">Navigation bar</a>
+Demo: <a href="https://veronikagregorec.github.io/navigation-bar/">Navigation bar</a>
 
 ![](screenshots/open.png)
 
